@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p>Array Map Method</p>
+
+<p id="DHT"></p>
+
+<script>
+const persons = [
+  {firstname : "Kakashi", lastname: "Moshimo"},
+  {firstname : "Raphael", lastname: "Odhiambo"},
+  {firstname : "Dark", lastname: "Tech"}
+];
+
+document.getElementById("DHT").innerHTML = persons.map(getFullName);
+
+function getFullName(item) {
+  return [item.firstname,item.lastname].join(" ");
+}
+</script>
+
+</body>
+</html>
